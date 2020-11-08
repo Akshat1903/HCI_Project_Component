@@ -1,0 +1,41 @@
+<!doctype html>
+	<head>
+		<script src="annyang.min.js"></script>
+		<style>
+			/* CSS comes here */
+			body {
+			    font-family:arial;
+			}
+			input {
+			    padding: 10px;
+			    width: 300px;
+			    border-radius: 5px;
+			    border: solid 2px #BBB;
+			}
+			div {
+			    margin:10px 0px;
+			}
+			button {
+			    padding:10px;
+			    background-color:#333268;
+			    color: #FFFFFF;
+			    border: 0px;
+			    cursor:pointer;
+			    border-radius: 5px;
+			}
+		</style>
+		<title>Pure JavaScript Text to Audio</title>
+	</head>
+	<body>
+	    <h2>JavaScript Text to Speech</h2>
+		<div><input type="text" id="text-to-speech" placeholder="Enter text to speak..."/></div>
+		<div><button type="button" onclick="textToAudio()">Speak</button></div>
+		<div><button type="button" onclick="pauseAudio()">Pause</button></div>
+		<div><button type="button" onclick="resumeAudio()">Resume</button></div>
+		<div><button type="button" onclick="cancelAudio()">Stop</button></div>
+		<div><button type="button" onclick="speakcommand()">Speak</button></div>
+        <br/>
+		<div><small><b>NOTE:</b> Enter text and click on speak button.</small></div>
+		<script src="try1.js"></script>
+	</body>
+</html>
