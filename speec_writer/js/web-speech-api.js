@@ -229,7 +229,7 @@ if (annyang) {
         'library': () => {
             document.getElementById('library').click()
         },
-        'start type': () => {
+        'start typing': () => {
             if (recognizing) {
                 recognition.stop();
                 return;
