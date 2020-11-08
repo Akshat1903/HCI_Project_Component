@@ -6,16 +6,53 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/web-speech.css">
+    <link rel="stylesheet" href="../HCI project web page/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
   </head>
   <body>
-      <main>
+
+    <header>
+       <!-- header inner -->
+       <div class="header">
+          <div class="container">
+             <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                   <div class="full">
+                      <div class="center-desk">
+                         <div class="logo"> <a href="index.html"><H1><font style="color: blueviolet;">E-LEARNING PORTAL</font></H1></a> </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                   <div class="menu-area">
+                      <div class="limit-box">
+                         <nav class="main-menu">
+                            <ul class="menu-area-main">
+                               <li class="active"> <a href="index.html">Home</a> </li>
+                               <li> <a href="about.html" id="about-us">About us</a> </li>
+                               <li><a href="../speec_writer/index.html" id="synthesiser">SYNTHESISER</a></li>
+                               <li><a href="library.html" id="library">Virtual library</a></li>
+                               <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                         </nav>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+
+       <!-- end header inner -->
+    </header>
+
+        <div class="speech-writer-content">
           <div class="container mt-3">
-              <h3 class="text-center">Web Speech API Demo</h3>
+              <h3 class="text-center">Speech Writer</h3>
               <div id="info"></div>
               <div class="float-right">
-                <button id="start_button">
-                  <img id="start_img" src="images/mic.gif" alt="Start"></button>
+                <a href="" id="start_button">
+                  <img id="start_img" src="images/mic.gif" alt="Start"></a>
               </div>
               <div id="results">
                 <span id="final_span" class="final"></span>
@@ -30,13 +67,16 @@
                 <div class="col-12 col-md-4 col-lg-6 mt-3 mt-md-0 p-0 m-0">
                   <div class="float-right">
                     <button id="copy_button" class="btn btn-primary ">Copy</button>
+                    <!-- <button class="btn btn-primary" onclick="speakcommand()">Speak Command</button> -->
+                    <button class="btn btn-primary" onclick="readcommand()">Read Content</button>
                   </div>
                 </div>
               </div>
-
           </div>
-      </main>
+        </div>
+
       <script src="js/languages.js"></script>
       <script src="js/web-speech-api.js"></script>
+      <script src="annayag.js"></script>
   </body>
 </html>

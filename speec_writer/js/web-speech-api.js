@@ -202,3 +202,65 @@ function showInfo(s) {
     $("#info").addClass('d-none');
   }
 }
+
+// if (annyang) {
+//   // Let's define a command.
+//   const commands = {
+//     'about us': () => { document.getElementById('about-us').click() },
+//     'synthesiser': () => { document.getElementById('synthesiser').click() },
+//     'library': () => { document.getElementById('library').click() },
+//     // 'start typing': () => {
+//     //   if (recognizing) {
+//     //     recognition.stop();
+//     //     return;
+//     //   }
+//     //   final_transcript = '';
+//     //   recognition.lang = select_dialect.value;
+//     //   recognition.start();
+//     //   ignore_onend = false;
+//     //   final_span.innerHTML = '';
+//     //   interim_span.innerHTML = '';
+//     //   start_img.src = 'images/mic-slash.gif';
+//     //   showInfo('allow');
+//     //   start_timestamp = event.timeStamp;
+//     //   console.log("hello");
+//     //  },
+//      'start reading': readcommand,
+//      'pause reading': pauseAudio,
+//      'resume reading': resumeAudio,
+//      'stop reading': cancelAudio,
+//   };
+//
+//   // Add our commands to annyang
+//   annyang.addCommands(commands);
+// }
+
+// function speakcommand() {
+//     annyang.start({ autoRestart: false });
+// }
+
+function readcommand() {
+    let msg = document.getElementById("final_span").textContent;
+    cancelAudio();
+    let speech = new SpeechSynthesisUtterance();
+    speech.lang = "en-US";
+
+    speech.text = msg;
+    speech.volume = 1;
+    speech.rate = 0.7;
+    speech.pitch = 1;
+
+    window.speechSynthesis.speak(speech);
+}
+
+function pauseAudio() {
+    window.speechSynthesis.pause();
+}
+
+function resumeAudio() {
+    window.speechSynthesis.resume();
+}
+
+function cancelAudio() {
+    window.speechSynthesis.cancel();
+}

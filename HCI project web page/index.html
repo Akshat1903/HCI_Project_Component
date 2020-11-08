@@ -26,6 +26,7 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
    </head>
    <!-- body -->
    <body class="main-layout home_page">
@@ -53,9 +54,9 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="index.html">Home</a> </li>
-                                 <li> <a href="about.html">About us</a> </li>
-                                 <li><a href="books.html">SYNTHESISER</a></li>
-                                 <li><a href="library.html">Virtual library</a></li>
+                                 <li> <a href="about.html" id="about-us">About us</a> </li>
+                                 <li><a href="../speec_writer/index.html" id="synthesiser">SYNTHESISER</a></li>
+                                 <li><a href="library.html" id="library">Virtual library</a></li>
                                  <li><a href="contact.html">Contact us</a></li>
                               </ul>
                            </nav>
@@ -65,7 +66,7 @@
                </div>
             </div>
          </div>
-         
+
          <!-- end header inner -->
       </header>
       <!-- end header -->
@@ -130,7 +131,7 @@
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-            </a> 
+            </a>
             <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
@@ -167,7 +168,7 @@
             </div>
          </div>
       </div>
-      
+
       <!-- end about -->
       <!-- Library -->
       <div class="Library">
@@ -176,7 +177,7 @@
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
                      <h2>Virtual <strong class="black">Library </strong></h2>
-                     <span>A complete virtual library, with all recomended books by the faculty. These books can be accessed by Haptic interface or Audio interface.</span> 
+                     <span>A complete virtual library, with all recomended books by the faculty. These books can be accessed by Haptic interface or Audio interface.</span>
                   </div>
                </div>
             </div>
@@ -210,7 +211,7 @@
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
                      <h2>Our <strong class="black">Synthesizer's </strong></h2>
-                     <span>An artifical way to interact with computter machinary, with the functionality to convert text to speech and vice versa.</span> 
+                     <span>An artifical way to interact with computter machinary, with the functionality to convert text to speech and vice versa.</span>
                   </div>
                </div>
             </div>
@@ -322,5 +323,6 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="annayag.js"></script>
    </body>
 </html>

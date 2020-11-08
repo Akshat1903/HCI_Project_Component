@@ -5,7 +5,7 @@
 
 .final {
   color: black;
-  padding-right: 3px; 
+  padding-right: 3px;
 }
 .interim {
   color: gray;
@@ -39,11 +39,15 @@ select {
   padding: 5px 5px;
 }
 
+.speech-writer-content{
+  margin-top: 150px;
+}
+
 @media screen and (max-width: 767px) {
     #select_dialect {
       position: absolute;
       right: 0;
-    } 
+    }
 }
 
 @media screen and (min-width: 768px) {
